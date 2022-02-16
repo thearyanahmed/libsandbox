@@ -54,10 +54,29 @@ func (l *SinglyLinkedList) DeleteNthNode(i int) {
 		}
 	}
 
-	fmt.Println("target - 1 node => ", targetNode.data, current, i)
+	// Check next.next and handle last element
 	// targetNode.next = targetNode.next.next
 	// check for memory stuff
 	targetNode.next = targetNode.next.next
+}
+
+func (l *SinglyLinkedList) NthFromLast(i int32) *Node {
+	if i >= l.Len {
+		return nil
+	}
+
+	nth := l.Len - i
+
+	node := l.Head
+
+	current := 0
+
+	for int32(current) < nth {
+		node = node.next
+		current++
+	}
+
+	return node
 }
 
 func (l SinglyLinkedList) GetLength() int32 {

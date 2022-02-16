@@ -17,6 +17,11 @@ func main() {
 	l.Push(40)
 	l.Push(50)
 
-	l.DeleteNthNode(4)
+	last := l.NthFromLast(2)
+
+	if last != nil {
+		fmt.Println(last.GetData())
+	}
+
 	l.Print()
 }
