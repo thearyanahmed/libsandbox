@@ -14,6 +14,9 @@ func main() {
 	l.Push(10)
 	l.Push(20)
 	l.Push(30)
+	l.Push(40)
+	l.Push(50)
 
+	l.DeleteNthNode(4)
 	l.Print()
 }
