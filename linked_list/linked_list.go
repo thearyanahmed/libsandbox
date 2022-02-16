@@ -58,6 +58,8 @@ func (l *SinglyLinkedList) DeleteNthNode(i int) {
 	// targetNode.next = targetNode.next.next
 	// check for memory stuff
 	targetNode.next = targetNode.next.next
+
+	l.Len--
 }
 
 func (l *SinglyLinkedList) NthFromLast(i int32) *Node {
