@@ -7,6 +7,9 @@ type (
 	}
 )
 
+// separate the first and second half ( cut by a and b)
+// before a, append the list2 to a.next
+// traverse list2, at the end, append second half
 func mergeInBetween(list1 *ListNode, a int, b int, list2 *ListNode) *ListNode {
 	node := list1
 	var firstHalf, lastHalf *ListNode
