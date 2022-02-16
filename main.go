@@ -17,11 +17,10 @@ func main() {
 	l.Push(40)
 	l.Push(50)
 
-	last := l.NthFromLast(2)
+	// firstNode := l.Head.Next
+	// anotherNode := firstNode.Next
 
-	if last != nil {
-		fmt.Println(last.GetData())
-	}
+	// anotherNode.Next = firstNode
 
-	l.Print()
+	fmt.Println("has cycle", l.HasCycle())
 }

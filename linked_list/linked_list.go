@@ -5,8 +5,9 @@ import (
 )
 
 type Node struct {
-	data int64
-	next *Node
+	data    int64
+	Next    *Node
+	visited bool
 }
 
 type SinglyLinkedList struct {
@@ -23,20 +24,20 @@ func NewSinglyLinkedList() *SinglyLinkedList {
 }
 
 func (l *SinglyLinkedList) Push(data int64) {
-	node := Node{data: data, next: l.Head}
+	node := Node{data: data, Next: l.Head, visited: false}
 
 	l.Head = &node
 	l.Len++
 }
 
-// TODO: update logic , check for if node exists in next.next
+// TODO: update logic , check for if node exists in Next.Next
 func (l *SinglyLinkedList) DeleteNthNode(i int) {
 	if i > int(l.Len) {
 		return
 	}
 
 	if i == 0 && (i+2) <= int(l.Len) {
-		l.Head = l.Head.next.next
+		l.Head = l.Head.Next.Next
 		return
 	}
 
@@ -46,18 +47,18 @@ func (l *SinglyLinkedList) DeleteNthNode(i int) {
 	// 1 -> 2 -> 3 -> 4 -> 5
 	// should be 1 -> 3 -> 4 -> 5
 	for current < i {
-		if targetNode.next != nil {
-			targetNode = targetNode.next
+		if targetNode.Next != nil {
+			targetNode = targetNode.Next
 			current++
 		} else {
 			break
 		}
 	}
 
-	// Check next.next and handle last element
-	// targetNode.next = targetNode.next.next
+	// Check Next.Next and handle last element
+	// targetNode.Next = targetNode.Next.Next
 	// check for memory stuff
-	targetNode.next = targetNode.next.next
+	targetNode.Next = targetNode.Next.Next
 
 	l.Len--
 }
@@ -74,11 +75,26 @@ func (l *SinglyLinkedList) NthFromLast(i int32) *Node {
 	current := 0
 
 	for int32(current) < nth {
-		node = node.next
+		node = node.Next
 		current++
 	}
 
 	return node
+}
+
+func (l *SinglyLinkedList) HasCycle() bool {
+	node := l.Head
+
+	for node != nil {
+		if node.visited == true {
+			return true
+		}
+
+		node.visited = true
+		node = node.Next
+	}
+
+	return false
 }
 
 func (l SinglyLinkedList) GetLength() int32 {
@@ -90,6 +106,6 @@ func (l SinglyLinkedList) Print() {
 
 	for node != nil {
 		fmt.Println(node.data)
-		node = node.next
+		node = node.Next
 	}
 }
