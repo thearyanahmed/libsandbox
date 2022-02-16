@@ -23,6 +23,13 @@ func NewSinglyLinkedList() *SinglyLinkedList {
 	return &SinglyLinkedList{Head: nil}
 }
 
+// Find the mid of the linkedlist
+// Take the second half and reverse it
+// Match them
+func (l *SinglyLinkedList) IsPalindrome() bool {
+	return false
+}
+
 func (l *SinglyLinkedList) Push(data int64) {
 	node := Node{data: data, Next: l.Head, visited: false}
 
@@ -108,4 +115,8 @@ func (l SinglyLinkedList) Print() {
 		fmt.Println(node.data)
 		node = node.Next
 	}
+}
+
+func a() {
+
 }
