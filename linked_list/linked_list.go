@@ -116,7 +116,3 @@ func (l SinglyLinkedList) Print() {
 		node = node.Next
 	}
 }
-
-func a() {
-
-}
