@@ -23,7 +23,7 @@ func mergeInBetween(list1 *ListNode, a int, b int, list2 *ListNode) *ListNode {
 		node = node.Next
 	}
 	firstHalf.Next = list2
-	
+
 	node = list2
 	for node.Next != nil {
 		node = node.Next
