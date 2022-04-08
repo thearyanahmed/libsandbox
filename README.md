@@ -7,3 +7,4 @@
   - [19 Remove Nth Node From End of List](go/linked_list/19_remove_nth_element_from_the_last.go) 
   - [1721 Swapping Nodes in a Linked List](go/linked_list/1721_swaping_nodes.go) 
   - [136 Single Number](rust/src/leetcode/single_number.rs)
+  - [169 Majority Element](rust/src/leetcode/majority_element.rs)

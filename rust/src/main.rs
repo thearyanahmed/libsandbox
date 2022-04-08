@@ -1,9 +1,9 @@
 mod leetcode;
 
 fn main() {
-    let v = vec![1,2,2,3,3];
+    let v = vec![3,2,3];
 
-    let r = leetcode::single_number::solution(v);
+    let r = leetcode::majority_element::solution(v);
 
     println!("{:?}", r);
 }
