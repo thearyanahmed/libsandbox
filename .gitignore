@@ -1,1 +1,6 @@
 rust/target
+
+# .idea s, just in case
+rust/.idea
+go/.idea
+.idea
