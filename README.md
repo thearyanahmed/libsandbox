@@ -8,3 +8,4 @@
   - [1721 Swapping Nodes in a Linked List](go/linked_list/1721_swaping_nodes.go) 
   - [136 Single Number](rust/src/leetcode/single_number.rs)
   - [169 Majority Element](rust/src/leetcode/majority_element.rs)
+  - [15 3Sum](rust/src/leetcode/three_sum.rs)
