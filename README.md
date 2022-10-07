@@ -1,7 +1,10 @@
-# Practicing data structures and algorithms
+# LibSandbox
 
-**Index**
-## Practicing data structures and algorithms
+This is a repository where I put random code, whether it's problem solving or an article about kubernetes or something else. This is called LibSandbox, lib indicating library and sandbox for tinkering with anything and everything that I find interesting.
+
+If anything interests you, feel free to use it/ clone it/update it. 
+
+### Index
 r/797022
 
 - [leetcode](rust/src/leetcode)
