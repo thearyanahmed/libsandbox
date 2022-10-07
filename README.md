@@ -4,6 +4,13 @@ This is a repository where I put random code, whether it's problem solving or an
 
 If anything interests you, feel free to use it/ clone it/update it. 
 
+### Postgres
+- [PostgreSql](postgres/README.md)
+
+### Redis
+- [Redis](redis/)
+  - [Redis Clustering](redis/README.md)
+
 ### Kubernetes
 - [Kubernetes](/kubernetes/)
   - [Cluster architecture and general notes](kubernetes/README.md)
