@@ -16,5 +16,5 @@ fn main() {
     let results = group_anagrams::solution(a);
     let another_results = group_anagrams::another_solution(b);
     println!("{:?}",results);
-    println!("{:?}",another_results)
+    println!("{:?}",another_results);
 }
