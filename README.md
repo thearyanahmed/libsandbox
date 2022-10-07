@@ -4,7 +4,11 @@ This is a repository where I put random code, whether it's problem solving or an
 
 If anything interests you, feel free to use it/ clone it/update it. 
 
-### Index
+### Kubernetes
+- [Kubernetes](/kubernetes/)
+  - [Cluster architecture and general notes](kubernetes/README.md)
+
+### Problem Solving
 r/797022
 
 - [leetcode](rust/src/leetcode)
