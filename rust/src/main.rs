@@ -7,14 +7,11 @@ mod ds;
 mod leetcode;
 mod utils;
 
-use crate::leetcode::group_anagrams;
+use crate::leetcode::kth_largest_element;
 
 fn main() {
     println!("[+] Practice code");
-    let a = group_anagrams::input();
-    let b = group_anagrams::input();
-    let results = group_anagrams::solution(a);
-    let another_results = group_anagrams::another_solution(b);
-    println!("{:?}",results);
-    println!("{:?}",another_results);
+    let (a,b) = kth_largest_element::input();
+    let results = kth_largest_element::solution(a,b);
+    println!("final output: {:?}",results);
 }
