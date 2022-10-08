@@ -1,3 +1,3 @@
-module github.com/thearyanahmed/rknot
+module github.com/thearyanahmed/libsandbox
 
 go 1.16
