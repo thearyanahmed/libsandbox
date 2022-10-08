@@ -35,12 +35,12 @@ r/797022
   - [Three sum](rust/src/leetcode/three_sum.rs)
   - [Squares of a sorted array](rust/src/leetcode/squares_of_a_sorted_array.rs)
   - [Top K Frequent](rust/src/leetcode/top_k_frequent.rs)
-    - **solved**
+    - **solution**
       - Count the number of occurrence and put it in a hashmap
       - Sort the values by converting it to a vec (rust)
       - Take the first k elements, so `0..k` to create the final result 
   - [Valid anagram](rust/src/leetcode/valid_anagram.rs)
-    - **solved**: 
+    - **solution**: 
       - Check the length of characters
       - Count occurrence of characters and putting it inside hashmap.
       - Match the counts, character by character
@@ -51,7 +51,7 @@ r/797022
   - [Remove Nth Node From End of List](go/linked_list/19_remove_nth_element_from_the_last.go) 
   - [Swapping Nodes in a Linked List](go/linked_list/1721_swaping_nodes.go) 
   - [Square root](go/binary_search/square_root.go)
-    - **solved**
+    - **solution**
       - take left = 0 and right = target
       - binary search, take `mid = left + ((right - left) / 2))` and check 
       - mid * mid is left or equals to `target`
