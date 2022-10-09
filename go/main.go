@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/thearyanahmed/libsandbox/binary_search"
+	"github.com/thearyanahmed/libsandbox/array"
 )
 
 func main() {
-	vec := []int{3, 6, 7, 11}
+	vec := []int{-1, 1, 0, -3, 3}
 
-	fmt.Println(binary_search.KokoEatingBananas(vec, 8))
+	fmt.Println(array.ProductExceptSelf(vec))
 }

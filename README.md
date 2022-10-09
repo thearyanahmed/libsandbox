@@ -69,11 +69,16 @@ r/797022
       - After the first loop, check if value was in boundery, if not found, return false
       - Else do a simple binary search within the row
   - [Koko eating bananas](go/binary_search/koko_eating_bananas.go)
-    - **Solution**
+    - **solution**
       - Loop for minimum to maximum
       - Set mid, calculate total hours to eat banans assuming mid is the result
       - Calculation formula `piles.forEach (p) => p / k` 
       - Check if calculated hours is less than target h
         - Yes: set `r = k - 1` , set res's new value as `min(res,k)`
         - No: set `l = k + 1`
-  
+   - [Product of array except self](go/array/product_of_array_except_self.go)
+     - **solution O(n)**
+       - Multiplying anything with 1 doesn't change the value
+       - Imagine there is a prefix and postfix for each element (including first and last)
+       - Create an array that contains prefixs
+       - Then multiply that array with postfixs
