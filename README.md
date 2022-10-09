@@ -11,15 +11,13 @@ If anything interests you, feel free to use it/ clone it/update it.
 - [Building Scalable Data Pipelines with Kafka](kafka/README.md)
 
 ### Redis
-- [Redis](redis/)
-  - [Redis Clustering](redis/README.md)
+- [Redis Clustering](redis/README.md)
 
 ### Kubernetes
-- [Kubernetes](/kubernetes/)
-  - [Cluster architecture and general notes](kubernetes/README.md)
+- [Cluster architecture and general notes](kubernetes/README.md)
 
-### Problem Solving
-r/797022
+### Data structure & Algorithms
+**r/781691**
 
 - [leetcode](rust/src/leetcode)
   - [remove nth element](go/linked_list/19_remove_nth_element_from_the_last.go)
