@@ -68,3 +68,12 @@ r/797022
       - Hold the value of the row in a variable
       - After the first loop, check if value was in boundery, if not found, return false
       - Else do a simple binary search within the row
+  - [Koko eating bananas](go/binary_search/koko_eating_bananas.go)
+    - **Solution**
+      - Loop for minimum to maximum
+      - Set mid, calculate total hours to eat banans assuming mid is the result
+      - Calculation formula `piles.forEach (p) => p / k` 
+      - Check if calculated hours is less than target h
+        - Yes: set `r = k - 1` , set res's new value as `min(res,k)`
+        - No: set `l = k + 1`
+  
