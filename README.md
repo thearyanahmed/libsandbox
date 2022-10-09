@@ -90,6 +90,11 @@ If anything interests you, feel free to use it/ clone it/update it.
        - Else, count until it doesn't have any sequenced number, `n = $n, while map[$n] n++`
        - Take `max(oldLongest, newCount)`
    - [Implement Time based key value store](go/binary_search/time_based_key_value_store.go)
-   - [Is valid palindrome](go/two_pointers/valid_palindrome.go)
+   - [Is valid palindrome I](go/two_pointers/valid_palindrome_i.go)
      - **solution O(n)**
        - Use two pointers
+   - [Is valid palindrome II](go/two_pointers/valid_palindrome_ii.go)
+     - **solution O(n)**
+       - Use two pointers, during the check, if it is not a palindrom, return s, and l,r
+       - Using those l, rs first run from `l + 1` until `r`
+       - If thats still false, run `l` to `r-1` 
