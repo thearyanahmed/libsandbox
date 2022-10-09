@@ -52,8 +52,19 @@ r/797022
   - [Swapping Nodes in a Linked List](go/linked_list/1721_swaping_nodes.go) 
   - [Square root](go/binary_search/square_root.go)
     - **solution**
-      - take left = 0 and right = target
-      - binary search, take `mid = left + ((right - left) / 2))` and check 
+      - Take left = 0 and right = target
+      - Binary search, take `mid = left + ((right - left) / 2))` and check 
       - mid * mid is left or equals to `target`
-      - if yes -> move left -> mid + 1, res = mid 
-      - else -> move right -> mid - 1 
+      - If yes -> move left -> mid + 1, res = mid 
+      - Else -> move right -> mid - 1 
+  - [Search in 2d matrix](go/binary_search/search_in_2d_matrix.go)
+    - **solution** 
+      - Use simple logic, iterate over the array
+      - Check if the right row's value is greater than the target
+      - If yes, increase `left++` and `continue`
+      - Else, do a linear search in the current one
+    - **another solution** 
+      - Iterate over the array and find the boundery where `row[0] <= target <= row[last]`
+      - Hold the value of the row in a variable
+      - After the first loop, check if value was in boundery, if not found, return false
+      - Else do a simple binary search within the row
