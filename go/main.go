@@ -3,11 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/thearyanahmed/libsandbox/array"
+	"github.com/thearyanahmed/libsandbox/two_pointers"
 )
 
 func main() {
-	vec := []int{1, 2, 3, 4, 100, 200}
-
-	fmt.Println(array.LongestConsecutiveSequnce(vec))
+	fmt.Println(two_pointers.IsValidPalindrome("race a car"))
 }
