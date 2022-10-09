@@ -7,6 +7,9 @@ If anything interests you, feel free to use it/ clone it/update it.
 ### Postgres
 - [PostgreSql](postgres/README.md)
 
+### Kafka
+- [Building Scalable Data Pipelines with Kafka](kafka/README.md)
+
 ### Redis
 - [Redis](redis/)
   - [Redis Clustering](redis/README.md)
