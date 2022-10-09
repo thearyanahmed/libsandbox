@@ -88,3 +88,4 @@ r/797022
        - Skip if it has `n-1` in hashmap. So if n = 100, if it has 99, skip
        - Else, count until it doesn't have any sequenced number, `n = $n, while map[$n] n++`
        - Take `max(oldLongest, newCount)`
+   - [Implement Time based key value store](go/binary_search/time_based_key_value_store.go)
