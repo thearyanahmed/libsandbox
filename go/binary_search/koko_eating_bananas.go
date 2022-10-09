@@ -11,7 +11,7 @@ func KokoEatingBananas(piles []int, h int) int {
 	res := r
 
 	for l <= r {
-		k := (l + r) / 2
+		k := l + ((r - l) / 2 )
 		hours := 0
 
 		for _, p := range piles {
