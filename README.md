@@ -98,3 +98,12 @@ If anything interests you, feel free to use it/ clone it/update it.
        - Use two pointers, during the check, if it is not a palindrom, return s, and l,r
        - Using those l, rs first run from `l + 1` until `r`
        - If thats still false, run `l` to `r-1` 
+   - [Two Sum](go/binary_search/two_sum.go)
+     - **solution**
+       - Do a binary search
+       - Start with `left = i + 1, right = len - 1`
+       - Binary Search `mid = left + ((right - left) /2 )`
+       - We are looking for `t = target - numbers[i]`
+       - If `array[mid] = t` thats result, `i and mid`
+       - If less, `left = mid + 1`
+       - ELse, `right = mid - 1` 
