@@ -82,3 +82,9 @@ r/797022
        - Imagine there is a prefix and postfix for each element (including first and last)
        - Create an array that contains prefixs
        - Then multiply that array with postfixs
+   - [Longest consecutive sequence](go/array/longest_consecutive_sequence.go)
+     - **solution**
+       - Put the array in a hashmap
+       - Skip if it has `n-1` in hashmap. So if n = 100, if it has 99, skip
+       - Else, count until it doesn't have any sequenced number, `n = $n, while map[$n] n++`
+       - Take `max(oldLongest, newCount)`
