@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	vec := []int{-1, 1, 0, -3, 3}
+	vec := []int{1, 2, 3, 4, 100, 200}
 
-	fmt.Println(array.ProductExceptSelf(vec))
+	fmt.Println(array.LongestConsecutiveSequnce(vec))
 }
