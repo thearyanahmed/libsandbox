@@ -107,3 +107,19 @@ If anything interests you, feel free to use it/ clone it/update it.
        - If `array[mid] = t` thats result, `i and mid`
        - If less, `left = mid + 1`
        - ELse, `right = mid - 1` 
+   - [Container with most water](go/two_pointers/container_with_most_water.go)
+     - **solution**
+       - Use two pointer
+       - Calculate the area
+       - Take the max from `max(area,res)`, res is 0 at first
+       - If height[left] is smaller than height[right]
+         - increase left
+         - else, decrease right
+   - [Trapping rain water](go/two_pointers/trapping_rain_water.go)
+   - [Reverse Linked List - I](go/linked_list/reverse_linked_list_i.go)
+     - **solution**
+       - take `prev *List`
+       - while head exists, set
+         - `head.Next = prev`
+         - `prev = head` (current)
+         - `head (current) = head.Next` (move forward)
