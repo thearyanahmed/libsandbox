@@ -11,5 +11,5 @@ func main() {
 
 	fmt.Println("Input ->",input)
 
-	fmt.Println(array.InsertionSort(input))
+	fmt.Println(array.QuickSort(input, 0, len(input) -1))
 }

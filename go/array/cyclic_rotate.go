@@ -1,7 +1,5 @@
 package array
 
-import "fmt"
-
 func CyclicRotation(arr []int32, n int32) []int32 {
 	x := arr[n - 1]
 
@@ -10,8 +8,6 @@ func CyclicRotation(arr []int32, n int32) []int32 {
 	}
 
 	arr[0] = x
-
-	fmt.Println(arr)
 
 	return arr
 }
