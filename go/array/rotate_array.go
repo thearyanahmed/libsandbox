@@ -1,7 +1,5 @@
 package array
 
-import "fmt"
-
 // Problem:
 // arr[] = {1, 2, 3, 4, 5, 6, 7}, n = 2
 // Output: 3 4 5 6 7 1 2
@@ -23,3 +21,17 @@ func RotateArrayByNPosition(arr []int32, n int) []int32 {
 
 	return res
 }
+
+// rotate by 2
+// 1,2,3,4,5,6,7
+
+// -> 7,6,1,2,3,4,5 # right rotate ?
+// 	-> Take the last 2 elements
+//  -> Reverse it 7, 6, -> 1,2,3,4,5 = 7, 6, 1, 2, 3, 4, 5
+
+// -> 3,4,5,6,7,1,2 # left rotate ?
+//	 -> 3, 4, 5, 6, 7 -> 1, 2
+
+
+// reverse
+// in place swap 
