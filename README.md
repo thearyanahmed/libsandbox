@@ -123,3 +123,9 @@ If anything interests you, feel free to use it/ clone it/update it.
          - `head.Next = prev`
          - `prev = head` (current)
          - `head (current) = head.Next` (move forward)
+ - [Array](go/array)
+    - [Rotate array by N](go/array/rotate_array.go)
+    - [Reverse array](go/array/reverse_array.go)
+    - [Rotate counter clockwise](go/array/rotate_counter_clock_wise.go)
+    - [Cyclic Rotation](go/array/cyclic_rotate.go)
+
