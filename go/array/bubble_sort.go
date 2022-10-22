@@ -1,7 +1,5 @@
 package array
 
-import "fmt"
-
 func BubbleSort(arr []int) []int{
 	swapped := true
 
@@ -16,8 +14,6 @@ func BubbleSort(arr []int) []int{
 				swapped = true
 			}
 		}
-
-		fmt.Println(arr)
 	}
 
 	return arr
