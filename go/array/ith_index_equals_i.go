@@ -1,7 +1,5 @@
 package array
 
-import "fmt"
-
 func IthIndexEqualsI(arr []int) []int {
 	m := make(map[int]int)
 	length := len(arr)
