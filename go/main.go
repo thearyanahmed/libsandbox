@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/thearyanahmed/libsandbox/two_pointers"
+	"github.com/thearyanahmed/libsandbox/array"
 )
 
 func main() {
-	fmt.Println(two_pointers.Trap([]int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}))
+
+	input := []int32{1,2,3,4,5,6,7,8,9}
+
+	fmt.Println(array.RotateArrayByNPosition(input, 2))
 }
