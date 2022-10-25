@@ -1,5 +1,9 @@
 package array
 
+// MergeSort
+// 1. if length of the array is less than 2, return arr
+// 2. else, take 2 halves, 1:1
+// 3. return merge(1st : 2nd)
 func MergeSort(arr []int) []int {
 	l := len(arr)
 
@@ -13,6 +17,10 @@ func MergeSort(arr []int) []int {
 	return merge(first, last)
 }
 
+// merge
+// 1. merge the both for based on order
+// 2. DON'T REASSIGN i or j
+// 3. append and return res
 func merge (first, last []int) []int {
 	var res []int
 	i, j := 0, 0

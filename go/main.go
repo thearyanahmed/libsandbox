@@ -2,14 +2,19 @@ package main
 
 import (
 	"fmt"
-	"github.com/thearyanahmed/libsandbox/array"
-	"github.com/thearyanahmed/libsandbox/utils"
+	"github.com/thearyanahmed/libsandbox/linked_list"
+	_ "github.com/thearyanahmed/libsandbox/utils"
 )
 
 func main() {
-	input := utils.RandomSlice(20)
+	fmt.Println("hello")
 
-	fmt.Println("Input ->",input)
+	list := linked_list.NewSinglyLinkedList()
 
-	fmt.Println(array.SelectionSort(input))
+	for i := 0; i <= 10; i++ {
+		list.Push(int64(i))
+	}
+
+	list.Print()
+	fmt.Println(list.Mid().GetData())
 }

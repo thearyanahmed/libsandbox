@@ -30,6 +30,24 @@ func (l *SinglyLinkedList) IsPalindrome() bool {
 	return false
 }
 
+func (l *SinglyLinkedList) Reverse () {
+	current := l.Head
+
+	var prev *Node
+	var next *Node
+
+	for current != nil {
+		next = current.Next
+
+		current.Next = prev // change the order of -> to <-
+		prev = current // now, the current element is the trailing one
+
+		current = next // go forward
+	}
+
+	l.Head = prev
+}
+
 func (l *SinglyLinkedList) Push(data int64) {
 	node := Node{data: data, Next: l.Head, visited: false}
 
@@ -115,4 +133,17 @@ func (l SinglyLinkedList) Print() {
 		fmt.Println(node.data)
 		node = node.Next
 	}
+}
+
+func (l SinglyLinkedList) Mid() *Node {
+	slow, fast := l.Head, l.Head
+
+	for fast != nil && fast.Next != nil {
+		fast = fast.Next.Next
+		slow = slow.Next
+	}
+
+	fmt.Println(slow)
+
+	return slow
 }

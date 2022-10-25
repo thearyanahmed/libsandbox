@@ -7,6 +7,8 @@ func ProductExceptSelf(arr []int) []int {
 
 	prefix := 1
 
+	// 1,2,3,4,5,6
+
 	for i := 0; i < length; i++ {
 		res[i] = prefix
 		prefix *= arr[i]
