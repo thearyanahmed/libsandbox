@@ -27,8 +27,6 @@ func swapNodes(head *listNodeB, k int) *listNodeB {
 	h := &listNodeB{Val: arr[0], Next: nil}
 	j := h
 
-	//fmt.Println("array",arr)
-
 	for i := 1; i < length; i++ {
 		node := listNodeB{Val: arr[i], Next: nil}
 

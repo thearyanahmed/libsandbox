@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/thearyanahmed/libsandbox/linked_list"
-	_ "github.com/thearyanahmed/libsandbox/utils"
+	"github.com/thearyanahmed/libsandbox/go/linked_list"
+	_ "github.com/thearyanahmed/libsandbox/go/utils"
 )
 
 func main() {
