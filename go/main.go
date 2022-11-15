@@ -15,6 +15,11 @@ func main() {
 		list.Push(int64(i))
 	}
 
-	list.Print()
-	fmt.Println(list.Mid().GetData())
+	x := list.Head
+
+	for x != nil {
+		fmt.Println(x.GetData())
+
+		x = x.Next
+	}
 }
