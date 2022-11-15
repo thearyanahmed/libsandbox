@@ -128,4 +128,9 @@ If anything interests you, feel free to use it/ clone it/update it.
     - [Reverse array](go/array/reverse_array.go)
     - [Rotate counter clockwise](go/array/rotate_counter_clock_wise.go)
     - [Cyclic Rotation](go/array/cyclic_rotate.go)
+    - [Bubble sort O(n^2)](go/array/bubble_sort.go)
+    - [Merge sort O(nLogn)](go/array/merge_sort.go)
+    - [Insertion sort O(n^2)](go/array/insertion_sort.go)
+    - [Selection sort O(n^2)](go/array/selection_sort.go)
+
 
