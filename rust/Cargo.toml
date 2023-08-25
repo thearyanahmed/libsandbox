@@ -1,3 +1,6 @@
+[package.metadata.rustc]
+warn_unused_imports = false
+
 [package]
 name = "rknot"
 version = "0.1.0"
