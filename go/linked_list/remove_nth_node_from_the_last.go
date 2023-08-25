@@ -9,8 +9,30 @@ type LinkedList struct {
 	Next  *LinkedList
 }
 
+// Two pointers, left and right, are set at the head node. Move the right pointer n steps forward. After doing that, **both pointers are exactly separated by n nodes apart**. Start moving both pointers forward until the right pointer reaches the last node.
+func RemoveKthNodeFromEndOptimized(head *LinkedList, k int) *LinkedList {
+	right, left := head, head
+
+	for i := 0; i < k; i++ {
+		// should also have a check that right.next is not nil, skipping for now
+		right = right.Next
+	}
+
+	if right == nil {
+		return head.Next
+	}
+
+	for right.Next != nil {
+		right = right.Next
+		left = left.Next
+	}
+
+	left.Next = left.Next.Next
+
+	return head
+}
+
 func RemoveKthNodeFromEnd(head *LinkedList, k int) {
-	// Write your code here.
 	total := 0
 
 	tmp := head
